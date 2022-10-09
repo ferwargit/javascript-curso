@@ -26,6 +26,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 30px rgb(187, 130, 130);
   background-color: #fff;
+  /* dark theme */
 }
 .calculator #display {
   color: #0a1e23;
@@ -92,6 +93,7 @@ body {
 }
 .theme-toggler::before {
   content: "";
+  position: absolute;
   height: 30px;
   width: 30px;
   top: 50%;
@@ -101,10 +103,10 @@ body {
   z-index: -1;
 }
 
-.theme-toggler .active {
+.theme-toggler.active {
   color: #333;
 }
-.theme-toggler .active::before {
+.theme-toggler.active::before {
   background-color: #fff;
 }
 
